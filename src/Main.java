@@ -14,6 +14,7 @@ public class Main {
         return names.stream()
                 .filter(name -> name != null && !name.isEmpty())
                 .map(name -> name.substring(1))
+                .sorted()
                 .collect(Collectors.toList());
     }
 }
